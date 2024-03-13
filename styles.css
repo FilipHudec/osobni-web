@@ -1,0 +1,148 @@
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.page__title {
+    font-size: 2em;
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 5s ease-in-out infinite;
+    background-size: 400% 100%;
+  }
+
+  @keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+.top__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    font-size: 2em;
+}
+
+.img-responsive {
+    border-radius: 50%;
+}
+
+.img__container {
+    margin-right: 2em;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 5em;
+    background-color: #7e3c3c;
+    color: #fff;
+}
+
+.about {
+    display: block;
+    width: 500px;
+    font-size: 1.5em;
+    padding: 1em;
+    background-color: #e87171;
+    border-radius: 1%;
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+
+.about:hover {
+    transform: translateY(-10px);
+}
+
+
+.contacts {
+    display: block;
+    width: 500px;
+    font-size: 1.5em;
+    padding: 1em;
+    background-color: #e87171;
+    border-radius: 1%;
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+
+.contacts:hover {
+    transform: translateY(-10px);
+}
+
+.contacts > p {
+    font-weight: bold;
+}
+
+
+.contacts__link {
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    transition:color .1s ease, font-weight .1s ease;
+}
+
+.contacts__link:hover {
+    transform: translateY(-5px);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts {
+        font-size: 1em;
+        width: 250px;
+    }
+
+    .about {
+        font-size: 1em;
+        width: 250px;
+    }
+
+    .top__header {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    
+    .top__header {
+        font-size: 1em;
+    }
+}
+
+
+
